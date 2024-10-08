@@ -37,7 +37,7 @@ export default function App() {
 
   async function playSound() {
     console.log('Loading Sound');
-    const { sound } = await Audio.Sound.createAsync(require('../../assets/notification.mp3')
+    const { sound } = await Audio.Sound.createAsync( require('../../assets/notification.mp3')
     );
     setSound(sound);
 
