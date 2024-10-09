@@ -4,6 +4,7 @@ import { Button, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import { Audio } from 'expo-av';
 import * as Location from 'expo-location';
 
+
 export default function App() {
   const [facing, setFacing] = useState<CameraType>('back');
   const [permission, requestPermission] = useCameraPermissions();
@@ -109,7 +110,7 @@ const styles = StyleSheet.create({
     flex: 1,
     flexDirection: 'row',
     backgroundColor: 'transparent',
-    margin: 64,
+    margin: 20,
   },
   button: {
     flex: 1,

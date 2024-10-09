@@ -6,16 +6,19 @@ import { ExternalLink } from '@/components/ExternalLink';
 import ParallaxScrollView from '@/components/ParallaxScrollView';
 import { ThemedText } from '@/components/ThemedText';
 import { ThemedView } from '@/components/ThemedView';
+import FontAwesome5 from '@expo/vector-icons/FontAwesome5'; // add car crash icon
 
+
+// 아래 코드에서 2번째 스크린 상단 그림을 code slash에서 car-crash로 변경하고 제목을 explore에서 History로 변경, 그리고 바로 아래 회색글씨 설명글 수정
 export default function TabTwoScreen() {
   return (
     <ParallaxScrollView
       headerBackgroundColor={{ light: '#D0D0D0', dark: '#353636' }}
-      headerImage={<Ionicons size={310} name="code-slash" style={styles.headerImage} />}>
+      headerImage={<FontAwesome5 size={310} name="car-crash" style={styles.headerImage} />}>
       <ThemedView style={styles.titleContainer}>
-        <ThemedText type="title">Explore</ThemedText>
+        <ThemedText type="title">History</ThemedText>
       </ThemedView>
-      <ThemedText>This app includes example code to help you get started.</ThemedText>
+      <ThemedText>Data on how often you feel drowsy.</ThemedText>
       <Collapsible title="File-based routing">
         <ThemedText>
           This app has two screens:{' '}
